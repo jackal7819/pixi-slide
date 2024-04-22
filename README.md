@@ -1,29 +1,30 @@
-# .
+# PixiSlide
 
-This template should help get you started developing with Vue 3 in Vite.
+PixiSlide is a lightweight image viewer application that fetches images from the Lorem Picsum API. It features a custom-built horizontal slider for smooth image navigation. You can easily switch between images using the next and previous buttons.
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Image Loading**: Fetch high-quality images from Lorem Picsum API.
+- **Horizontal Slider**: Navigate through images with a smooth and intuitive slider.
+- **Navigation Buttons**: Easily move to the next or previous image.
+- **Image Highlighting**: Highlight any image to reveal a link to its original source on Unsplash.
 
-## Customize configuration
+## Technologies Used
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- **Vue 3**: Modern JavaScript framework for building user interfaces.
+- **Vite**: Next-generation frontend build tool.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **@formkit/auto-animate**: For smooth animations.
+- **@tanstack/vue-query**: For efficient data fetching and caching.
 
-## Project Setup
+## Usage
 
-```sh
-npm install
-```
+1. Open the app in your browser.
+2. Use the next and previous buttons to navigate through images.
+3. Click on an image to highlight it and reveal the link to its source on Unsplash.
 
-### Compile and Hot-Reload for Development
+## Fun Fact
 
-```sh
-npm run dev
-```
+Did you know? PixiSlide was inspired by the beauty of photography and the simplicity of image browsing. It aims to provide a delightful experience for image enthusiasts and casual users alike. Enjoy exploring the world of photography with PixiSlide! 📸
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Feel free to contribute, report issues, or give feedback. Happy sliding!
