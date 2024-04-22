@@ -1,5 +1,7 @@
 <template>
-	<div class="flex items-center justify-between px-5 mb-[25vh] md:px-0 gap-3">
+	<div
+		class="flex items-center justify-between w-full gap-3 px-5 mb-[25vh] md:px-0"
+	>
 		<h1
 			class="text-5xl font-bold duration-300 cursor-default hover:text-amber-500"
 		>
