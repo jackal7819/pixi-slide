@@ -1,6 +1,6 @@
 {
   "name": "pixi-slide",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
     "@tanstack/vue-query": "^5.31.0",
     "vue": "^3.4.21"
   },

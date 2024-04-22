@@ -53,19 +53,17 @@
 
 <template>
 	<div class="carousel">
-		<div class="flex justify-center gap-5 mb-10">
+		<div class="flex justify-center gap-5 mb-10" v-auto-animate>
 			<div
 				v-for="image in displayedImages"
 				:key="image.id"
 				class="w-full md:rounded-lg md:w-[400px] md:h-[266px]"
 			>
-				<Transition name="slide-fade">
-					<img
-						:src="image.download_url"
-						:alt="image.author"
-						class="w-full md:h-full md:rounded-lg mobile"
-					/>
-				</Transition>
+				<img
+					:src="image.download_url"
+					:alt="image.author"
+					class="w-full md:h-full md:rounded-lg mobile"
+				/>
 			</div>
 		</div>
 		<div class="flex justify-center gap-5 px-5 md:0">
@@ -84,19 +82,3 @@
 		</div>
 	</div>
 </template>
-
-<style scoped>
-.slide-fade-enter-active {
-  transition: all 0.3s ease-out;
-}
-
-.slide-fade-leave-active {
-  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
-}
-
-.slide-fade-enter-from,
-.slide-fade-leave-to {
-  transform: translateX(20px);
-  opacity: 0;
-}
-</style>
