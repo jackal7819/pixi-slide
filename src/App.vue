@@ -1,17 +1,16 @@
 <script setup>
 	import { useQuery } from '@tanstack/vue-query';
-	import { ref } from 'vue';
+	import { ref, toRefs } from 'vue';
 	import { getImages } from './services/fetchImages';
 	import Title from './components/Title.vue';
 	import ImageCarousel from './components/ImageCarousel.vue';
 	import SelectedImageListUrl from './components/SelectedImageListUrl.vue';
 
 	const page = ref(1);
-	const { isPending, isError, data, error } = useQuery({
-		queryKey: ['images'],
-		queryFn: () => getImages(page),
+	const { data, isLoading, isError } = useQuery({
+		queryKey: ['images', page],
+		queryFn: () => getImages(page.value),
 	});
-	console.log(data);
 </script>
 
 <template>
@@ -20,7 +19,7 @@
 			class="p-5 md:p-10 max-w-[1920px] mx-auto flex flex-col justify-between min-h-screen"
 		>
 			<Title />
-			<ImageCarousel />
+			<ImageCarousel :images="data || []" />
 			<SelectedImageListUrl />
 		</div>
 	</div>

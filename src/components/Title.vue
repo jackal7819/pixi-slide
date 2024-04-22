@@ -1,5 +1,5 @@
 <template>
-	<div class="flex items-center justify-between">
+	<div class="flex items-center justify-between mb-10">
 		<h1
 			class="text-5xl font-bold duration-300 cursor-default hover:text-amber-500"
 		>
