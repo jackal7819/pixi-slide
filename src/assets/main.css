@@ -11,3 +11,7 @@ body {
 p {
 	font-family: 'Montserrat Alternates', sans-serif;
 }
+
+.mobile {
+	height: calc(100vw * 2 / 3);
+}
